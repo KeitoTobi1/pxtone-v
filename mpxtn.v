@@ -1,6 +1,6 @@
 module pxtone
 
-#flag -I libmpxtn/src
+#flag -I thirdparty/libmpxtn
 #include "mpxtn.h"
 
 struct C.MPXTN {}
