@@ -1,8 +1,6 @@
 module pxtone
 
-struct Pxtone {
-	core Mpxtn
-}
+struct Pxtone {}
 
 pub fn pxtone_load(){
 
