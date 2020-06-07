@@ -8,8 +8,16 @@ module pxtone
 #flag -I lib/libmpxtn
 #flag lib/libmpxtn.o
 #include "mpxtn.h"
+#include <stdbool.h>
 
-struct C.MPXTN {}
+struct C.MPXTN {
+	beat_num u32
+	beat_clock u32
+	beat_tempo f64
+	meas_loop u32
+	meas_end u32
+	clock int
+}
 
 struct C.POINT {
 mut:

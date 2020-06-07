@@ -1,11 +1,21 @@
 module pxtone
 
-struct Pxtone {}
+struct Pxtone {
+	mp C.MPXTN
+}
 
-pub fn pxtone_load(){
+pub fn new_pxtone(file string) {
 
 }
 
-pub fn pxtone_start(){
+pub fn (p Pxtone) pxtone_start() {
 
+}
+
+pub fn (p Pxtone) pxtone_stop() {
+
+}
+
+pub fn (p Pxtone) pxtone_free() {
+	C.mpxtn_close(p.mp)
 }
